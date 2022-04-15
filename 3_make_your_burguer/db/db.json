@@ -89,34 +89,28 @@
       "id": 1
     },
     {
-      "nome": "JOao",
+      "nome": "Zenildo",
       "carnes": "Picanha",
       "pao": "Parmesão e Orégano",
       "opcionais": [
-        "Tomate",
         "Cebola roxa",
-        "Cheddar"
+        "Tomate",
+        "Cheddar",
+        "Pepino"
       ],
-      "status": "Solicitado",
-      "id": 2
-    },
-    {
-      "nome": "Joaquina",
-      "carnes": "Veggie burger",
-      "pao": "Integral",
-      "opcionais": [
-        "Tomate"
-      ],
-      "status": "Solicitado",
-      "id": 3
-    },
-    {
-      "nome": null,
-      "carnes": null,
-      "pao": null,
-      "opcionais": [],
       "status": "Solicitado",
       "id": 4
+    },
+    {
+      "nome": "Jurandir",
+      "carnes": "Picanha",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Tomate",
+        "Cebola roxa"
+      ],
+      "status": "Em produção",
+      "id": 5
     }
   ]
 }
