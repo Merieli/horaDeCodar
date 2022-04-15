@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>Componente de mensagem</p>
+        <Message :msg="msg" v-show="msg" /> <!-- Mesagem exibida quando houver algo para msg-->
         <div>
             <form id="burger-form" @submit="createBurger">
                 <div class="input-container">
@@ -41,6 +41,8 @@
 </template>
 
 <script>
+import Message from './Message.vue'
+
 export default {
     name: 'BurgerForm',
     data(){
@@ -77,11 +79,32 @@ export default {
                 status: "Solicitado"
             }
 
-            console.log(data)
+            const dataJson = JSON.stringify(data);
+
+            const req = await fetch("http://localhost:3000/burgers", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: dataJson
+            });
+
+            const res = await req.json();
+
+            this.msg = `Pedido N ${res.id} realizado com sucesso`;
+
+            setTimeout(() => this.msg = "", 3000);
+
+            // quando a resquisição ocorrer os campos serão limpos:
+            this.nome = "";
+            this.pao = "";
+            this.carne = "";
+            this.opcionais = "";
         }
     },
     mounted(){
         this.getIngredientes() //chamada do método getIngredientes quando o componente for montado
+    },
+    components: {
+        Message
     }
 }
 </script>
