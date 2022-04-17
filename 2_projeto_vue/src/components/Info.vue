@@ -34,7 +34,7 @@ export default {
     components: {
         Picture
     },
-    props: { //ao criar props em um componente é possívwl utilizá-la na tag do componente 
+    props: { //ao criar props em um componente é possível utilizá-la na tag do componente 
         email: String, //pode ser definido o tipo da varivel que será um propriedade
         esta_trabalhando: Boolean
     },

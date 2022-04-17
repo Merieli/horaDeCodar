@@ -24,7 +24,7 @@
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div class="actions">
                     <select name="status" class="status" @change="updateBurger($event, burger.id)">
                         <option value="">Selecione</option>
                         <option :value="state.tipo" v-for="state in status" :key="state.id" :selected="burger.status == state.tipo">
@@ -108,7 +108,7 @@ export default {
 
 <style scoped>
     #burger-table{
-        max-width: 1000px;
+        max-width: 1100px;
         margin: 0 auto;
     }
 
@@ -131,7 +131,7 @@ export default {
 
     #burger-table-heading div,
     .burger-table-row div{
-        width: 19%;
+        width: 25%;
     }
 
     .burger-table-row{
@@ -143,6 +143,11 @@ export default {
     #burger-table-heading .order-id,
     .burger-table-row .order-number{
         width: 5%;
+    }
+
+    .actions{
+        display: flex;
+        align-items: center;
     }
 
     select{

@@ -79,16 +79,6 @@
   ],
   "burgers": [
     {
-      "nome": "tes",
-      "carnes": "Maminha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Tomate"
-      ],
-      "status": "Solicitado",
-      "id": 1
-    },
-    {
       "nome": "Zenildo",
       "carnes": "Picanha",
       "pao": "Parmesão e Orégano",
@@ -111,6 +101,28 @@
       ],
       "status": "Em produção",
       "id": 5
+    },
+    {
+      "nome": "Merieli",
+      "carnes": "Picanha",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Tomate",
+        "Cebola roxa"
+      ],
+      "status": "Solicitado",
+      "id": 6
+    },
+    {
+      "nome": "Joaquim",
+      "carnes": "Maminha",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Bacon",
+        "Salame"
+      ],
+      "status": "Solicitado",
+      "id": 7
     }
   ]
 }

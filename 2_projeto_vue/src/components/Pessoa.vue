@@ -4,7 +4,7 @@
         <!-- É possível passar um valor do componente pai para ser exibido no componente filho inserindo o nome de uma variável data para o valor da Propriedade de um componente.
             O email que estiver em data é enviado via props para o componente: ":email="email""
          -->
-        <Info :email="email" :esta_trabalhando=false /> <!--nomes de propriedades devem ser diferentes das propriedades dos componentes para que nãohajam conflitos -->
+        <Info :email="email" :esta_trabalhando=false /> <!--nomes de propriedades devem ser diferentes das propriedades dos componentes para que não hajam conflitos -->
         <!--quando uma props for booleana é preciso passá-la com o binding ":" para que o vue entenda-->
         <Form />
     </div>
